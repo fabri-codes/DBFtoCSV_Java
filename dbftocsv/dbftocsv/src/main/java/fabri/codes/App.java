@@ -9,8 +9,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+
 public class App {
+    
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
         String filePath = "path/to/.dbf";
         File dbfFilePath = new File(filePath);
         String csvFilePath = "path/to/.csv";
@@ -32,5 +35,7 @@ public class App {
         } catch (IOException e) {
             e.printStackTrace();
         }
+            long totalTime = System.currentTimeMillis() - startTime;
+            System.out.println("Tempo total de execução: " + totalTime + "ms");
     }
 }
