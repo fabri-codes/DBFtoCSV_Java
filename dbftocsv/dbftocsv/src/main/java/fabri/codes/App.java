@@ -27,7 +27,7 @@ public class App {
                 csvPrinter.printRecord(row);
             }
 
-            System.out.println("DBF file converted to CSV successfully!");
+            System.out.println("Arquivo DBF convertido com sucesso!");
 
         } catch (IOException e) {
             e.printStackTrace();
